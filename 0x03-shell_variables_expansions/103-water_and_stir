@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $[ $(echo $WATER | tr 'a-z' '0-9' ) $(echo $STIR | tr 'a-z' '0-9' ) ] | tr -d '-' | tr '0123456789' 'bestchol'
+echo "ibase=water; $WATER + ibase=stir; $STIR" | tr '0123456789ABCDEF' '012345bestchol'
